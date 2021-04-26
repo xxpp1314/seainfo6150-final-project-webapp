@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the PetDetailDescription correctly 1`] = `
+<div>
+  <div
+    class="description"
+  >
+    <p
+      class="title"
+    >
+      Price: 
+      $300
+    </p>
+    <br />
+    <p>
+      Category: 
+      dogs
+    </p>
+    <br />
+    <p>
+      Age: 
+      Adult
+    </p>
+    <br />
+    <p>
+      Gender: 
+      Male
+    </p>
+    <br />
+    <p>
+      Size: 
+      Medium
+    </p>
+    <br />
+    <p>
+      Breed: 
+      Terrier Mix
+    </p>
+    <br />
+    <p>
+      Description: 
+      He is a four year old Jack Russell terrier mix. Russell is a great companion pet for adults and families with older children, however he does not do well with other animals so he needs to be an only pet. He is very energetic and loves walks, chewing on his bones, and napping with his owner. He is house trained.
+    </p>
+    <br />
+  </div>
+</div>
+`;

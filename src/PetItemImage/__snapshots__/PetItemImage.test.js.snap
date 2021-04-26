@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the PetItemImage correctly 1`] = `
+<div>
+  <div>
+    <img
+      alt=""
+      class="image"
+      src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/51169344/1/?bust=1619142914&width=1080"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Header correctly 1`] = `
+<div>
+  <header
+    class="flex"
+  >
+    <h1
+      class="title"
+    >
+      Pet Home
+    </h1>
+    <nav
+      class="container"
+    >
+      <a
+        class="menuitem"
+        href="/"
+      >
+         Home 
+      </a>
+      <div
+        class="dropdown"
+      >
+        <button
+          class="dropbutton"
+        >
+          Category
+          <i
+            class="fa fa-caret-down"
+          />
+        </button>
+        <div
+          class="item"
+        >
+          <a
+            class="li"
+            href="/dogs"
+          >
+            Dogs
+          </a>
+          <a
+            class="li"
+            href="/cats"
+          >
+            Cats
+          </a>
+          <a
+            class="li"
+            href="/rabbits"
+          >
+            Rabbits
+          </a>
+          <a
+            class="li"
+            href="/birds"
+          >
+            Birds
+          </a>
+          <a
+            class="li"
+            href="/others"
+          >
+            Other Pets
+          </a>
+        </div>
+      </div>
+      <a
+        class="menuitem"
+        href="/aboutus"
+      >
+        About Us
+      </a>
+      <a
+        class="menuitem"
+        href="/contactus"
+      >
+        Contact Us
+      </a>
+      <a
+        class="menuitem"
+        href="/feedback"
+      >
+        Feedback
+      </a>
+    </nav>
+  </header>
+</div>
+`;

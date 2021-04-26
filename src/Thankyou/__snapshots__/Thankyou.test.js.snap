@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Thank You Page correctly 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="thankyou"
+    >
+      <h3>
+        We have received your information.
+      </h3>
+      <br />
+      <h1>
+        Thank you for your time. We will contact you soon! 
+      </h1>
+    </div>
+  </div>
+</div>
+`;

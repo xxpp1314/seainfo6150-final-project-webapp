@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the FeaturedGifts Page correctly 1`] = `
+<div>
+  <div>
+    <h1
+      class="title"
+    >
+      Find Your Suitable Pet Here
+    </h1>
+    <div
+      class="container"
+    >
+      <div
+        class="grid"
+      >
+        <div
+          class="div"
+        >
+          <img
+            alt=""
+            class="image"
+            src="Bane.jpg"
+          />
+          <a
+            class="text"
+            href="/dogs/Bane"
+          >
+            Smart Dog: Bane
+          </a>
+        </div>
+        <div
+          class="div"
+        >
+          <img
+            alt=""
+            class="image"
+            src="Milo.jpg"
+          />
+          <a
+            class="text"
+            href="/cats/Milo"
+          >
+            Cute Cat: Milo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

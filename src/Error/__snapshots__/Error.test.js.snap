@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Error Page correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="main"
+    >
+      <div>
+        <img
+          alt=""
+          class="image"
+          src="error.jpg"
+        />
+      </div>
+      <h2>
+        404
+      </h2>
+      <h4>
+        Ooops, something is wrong with this page!
+      </h4>
+      <a
+        class="link"
+        href="/"
+      >
+        Go back to Homepage
+      </a>
+    </div>
+  </div>
+</div>
+`;

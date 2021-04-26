@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the AboutUs Page correctly 1`] = `
+<div>
+  <div
+    class="mainpage"
+  >
+    <div
+      class="grid"
+    >
+      <div
+        class="flex"
+      >
+        <div
+          class="flexitems"
+        >
+          <img
+            alt=""
+            class="image"
+            src="AboutUs.jpg"
+          />
+        </div>
+        <div
+          class="gap"
+        >
+           
+        </div>
+        <div
+          class="flexitems"
+        >
+          <h1>
+            A Little Bit About Us
+          </h1>
+          <br />
+          <br />
+          <p>
+            In North America millions of lost, stray, and abandoned animals enter shelters every year. With so many animals available, pet adoption is quickly becoming the most popular method of finding a new pet.
+          </p>
+          <br />
+          <p>
+            However, pets are innocent and adorable. So, If you are considering adopt a pet, we are the place that can help you find your suitable pet.
+          </p>
+          <br />
+          <p>
+            In addition, if you have ideas or suggestions to improve our service, please feel free to speak your thought. Click 
+            <a
+              class="text"
+              href="/feedback"
+            >
+              here
+            </a>
+             to provide your feedback
+          </p>
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

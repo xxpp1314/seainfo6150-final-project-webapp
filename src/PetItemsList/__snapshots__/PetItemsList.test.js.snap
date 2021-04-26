@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the PetItemsList correctly 1`] = `
+<div>
+  <div
+    class="flexContainer"
+  >
+    <h1
+      class="title"
+    >
+      Dogs
+    </h1>
+    <ul
+      class="container"
+    >
+      <li>
+        <a
+          class="link"
+          href="/dogs/Russell"
+        >
+          <div
+            class="petItem"
+          >
+            <p
+              class="text"
+            >
+              Russell
+            </p>
+            <div>
+              <img
+                alt=""
+                class="image"
+                src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50829956/1/?bust=1619138292&width=1080"
+              />
+            </div>
+            <p
+              class="text"
+            >
+              Price: 
+              $300
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

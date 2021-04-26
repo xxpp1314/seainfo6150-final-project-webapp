@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Footer component correctly 1`] = `
+<div>
+  <div
+    class="footer"
+  >
+    <div
+      class="margin"
+    >
+      <img
+        alt=""
+        class="logo"
+        src="logo.png"
+      />
+      <li
+        class="li"
+      >
+        <p
+          class="p"
+        >
+           Pet Home Inc.
+        </p>
+      </li>
+      <a
+        class="optionLink"
+        href="/contactUs"
+      >
+        <p
+          class="p"
+        >
+          Contact Us
+        </p>
+      </a>
+      <a
+        class="optionLink"
+        href="/feedback"
+      >
+        <p
+          class="p"
+        >
+          Feedback
+        </p>
+      </a>
+      <li
+        class="li"
+      />
+      <p
+        class="p"
+      >
+        Open Hours: Mon - Thu: 9 a.m. - 8 p.m. Fri - Sun: 10 a.m. - 7 p.m.
+      </p>
+    </div>
+  </div>
+</div>
+`;

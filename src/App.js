@@ -1,69 +1,118 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
-
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
+import React, {useEffect, useState}  from "react";
+import {Switch, Route, HashRouter } from "react-router-dom";
+import Home from './Home/Home';
+import styles from "./App.module.css";
+import { isEmpty } from "lodash";
+import Feedback from "./Feedback/Feedback.jsx";
+import AboutUs from "./AboutUs/AboutUs.jsx";
+import PetItemsList from "./PetItemsList/PetItemsList";
+import PetItemDetail from "./PetItemDetail/PetItemDetail";
+import Header from "./Header/Header.jsx";
+import Thankyou from "./Thankyou/Thankyou.jsx";
 import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import Footer from "./Footer/Footer.jsx";
+import ContactUs from "./ContactUs/ContactUs";
 
 function App() {
+
+  const [fetchedData, setFetchedData] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+        const response = await fetch( 
+          "http://demo2087294.mockable.io/"
+        );
+        const responseJson = await response.json();
+        setFetchedData(responseJson);
+    };
+
+    if (isEmpty(fetchedData)) {
+      fetchData();
+    }
+  }, [fetchedData]);
+
+  let displayDogsItemsList;
+  let displayCatsItemsList;
+  let displayRabbitsItemsList;
+  let displayBirdsItemList;
+  let displayOthersItemsList;
+
+  if(!isEmpty(fetchedData)){
+    var dogsCategory = Object.values(fetchedData.dogs)
+    var catsCategory = Object.values(fetchedData.cats)
+    var rabbitsCategory = Object.values(fetchedData.rabbits)
+    var birdsCategory =  Object.values(fetchedData.birds)
+    var othersCategory =  Object.values(fetchedData.others)
+
+    displayDogsItemsList = (
+      <PetItemsList petItemList={dogsCategory} pagetitle="Dogs"/>      
+    )
+    displayCatsItemsList = (
+      <PetItemsList petItemList={catsCategory} pagetitle="Cats"/>
+    )
+    displayRabbitsItemsList = (
+      <PetItemsList petItemList={rabbitsCategory} pagetitle="Rabbits"/>
+    )
+    displayBirdsItemList = (
+      <PetItemsList petItemList={birdsCategory} pagetitle="Birds"/>
+    )
+    displayOthersItemsList = (
+      <PetItemsList petItemList={othersCategory} pagetitle="Others"/>
+    )
+
+  }
+  else{
+    displayDogsItemsList=<div>Data is fetching!</div>;
+  }
+
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+    <HashRouter>
+      <Header/>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
         <Route
-          path="/bar/:categoryId/:productId"
+          path="/dogs"
+          exact
+          render={() => displayDogsItemsList}
+        />
+        <Route
+          path="/cats"
+          exact
+          render={() => displayCatsItemsList}
+        />
+        <Route
+          path="/rabbits"
+          exact
+          render={() => displayRabbitsItemsList}
+        />
+        <Route
+          path="/birds"
+          exact
+          render={() => displayBirdsItemList}
+        />
+        <Route
+          path="/others"
+          exact
+          render={() => displayOthersItemsList}
+        />
+        <Route
+          path="/:category/:categoryid"
           exact
           render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
+            <PetItemDetail className={styles.homepage}
+              categoryid={match.params.categoryid}
+              category={match.params.category}
             />
           )}
         />
-        <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
+        <Route path="/aboutus" exact component={AboutUs} />
+        <Route path="/contactus" exact component={ContactUs} />
+        <Route path="/feedback" exact component={Feedback} />
+        <Route path="/thankyou" exact component={Thankyou} />
         <Route component={Error} />
       </Switch>
-    </>
+      <Footer/>
+      </HashRouter> 
   );
 }
 

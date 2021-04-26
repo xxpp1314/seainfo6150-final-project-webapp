@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Feedback component correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="formdetails"
+      >
+        <form
+          class="text"
+        >
+          <br />
+          <label
+            for="name"
+          >
+            Your First Name: 
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myFirstName"
+            name="myFirstName"
+            required=""
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Last Name:  
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myLastName"
+            name="myLastName"
+            required=""
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Email ID:  
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myEmailID"
+            name="myEmailID"
+            placeholder="abc@example.com"
+            required=""
+            type="email"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Phone No: 
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myPhone"
+            name="myPhone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-345-6785"
+            required=""
+            type="tel"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Address Line 1: 
+          </label>
+          <input
+            class="details"
+            id="myAddressLine1"
+            maxlength="500"
+            name="myAddressLine1"
+            required=""
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Address Line 2: 
+          </label>
+          <input
+            class="details"
+            id="myAddressLine2"
+            maxlength="500"
+            name="myAddressLine2"
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            City of the Home Address: 
+          </label>
+          <br />
+          <select
+            class="dropdown"
+            id="myCity"
+            name="myCity"
+          >
+            <option
+              value="Seattle"
+            >
+              Seattle
+            </option>
+            <option
+              value="San Jose"
+            >
+              San Francisco
+            </option>
+            <option
+              value="Boston"
+            >
+              Boston
+            </option>
+          </select>
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            State of the Home Address: 
+          </label>
+          <br />
+          <select
+            class="dropdown"
+            id="myState"
+            name="myState"
+          >
+            <option
+              value="WA"
+            >
+              Washington
+            </option>
+            <option
+              value="CA"
+            >
+              California
+            </option>
+            <option
+              value="MA"
+            >
+              Massachusetts
+            </option>
+          </select>
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Zip Code: 
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myZipCode"
+            name="myZipCode"
+            pattern="[0-9]{5}"
+            placeholder="12345"
+            required=""
+            type="zip"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Do you have any experiences with pet?  
+          </label>
+          <select
+            class="dropdown"
+            id="myExperience"
+            name="myExperience"
+          >
+            <option
+              value="Yes"
+            >
+              Yes
+            </option>
+            <option
+              value="No"
+            >
+              No
+            </option>
+          </select>
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            What is your home type?  
+          </label>
+          <br />
+          <select
+            class="dropdown"
+            id="myHome"
+            name="myHome"
+          >
+            <option
+              value="Apartment"
+            >
+              Apartment
+            </option>
+            <option
+              value="House"
+            >
+              Single Family House/Town House
+            </option>
+            <option
+              value="Other"
+            >
+              Other
+            </option>
+          </select>
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Does your home have any restrctions related to this pet? 
+          </label>
+          <br />
+          <select
+            class="dropdown"
+            id="myRestriction"
+            name="myRestriction"
+          >
+            <option
+              value="Yes"
+            >
+              Yes
+            </option>
+            <option
+              value="No"
+            >
+              No
+            </option>
+          </select>
+          <br />
+          <br />
+          <input
+            class="button"
+            type="submit"
+            value="Submit"
+          />
+          <br />
+          <br />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
